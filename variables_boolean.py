@@ -2,7 +2,7 @@
 # and is evaluated next;
 # or is evaluated last.
 
-True or False 
+True or False
 (3 < 4) and (5 >= 5)
 this() and not that()
 

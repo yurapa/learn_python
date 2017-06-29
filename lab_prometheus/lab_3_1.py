@@ -9,7 +9,7 @@
 
 # Вхідні дані: 3 дійсних числа a, b, c. Передаються в програму як аргументи командного рядка.
 
-# Результат роботи: рядок "triangle", якщо можуть існувати відрізки з такою довжиною 
+# Результат роботи: рядок "triangle", якщо можуть існувати відрізки з такою довжиною
 #   та з них можна скласти трикутник, або "not triangle" -- якщо ні.
 
 # Наприклад
@@ -30,11 +30,11 @@ b = float(sys.argv[2])
 c = float(sys.argv[3])
 
 if a <= 0 or b <= 0 or c <= 0:
-  # print "Не правильно введені сторони трикутника, вони мають бути > 0"
-  print "not triangle"
-  sys.exit()
+    # print "Не правильно введені сторони трикутника, вони мають бути > 0"
+    print "not triangle"
+    sys.exit()
 
 if (a*a + b*b == c*c) or (a*a + c*c == b*b) or (a == b == c):
-	print "triangle"
+    print "triangle"
 else:
-	print "not triangle"
+    print "not triangle"

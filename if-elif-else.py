@@ -12,9 +12,9 @@ if a > b: print "a is greater than b";
 
 
 if (a > b):
-   print "a is greater than b"
-   print "blocks are defined by indentation"
+    print "a is greater than b"
+    print "blocks are defined by indentation"
 elif (a < b):
-   print "a is less than b"
+    print "a is less than b"
 else:
-   print "a is equal to b"
+    print "a is equal to b"

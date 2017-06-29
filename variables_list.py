@@ -36,8 +36,8 @@ print letters # ['a', 'b', 'c', 'd', 'e']
 
 ################################################################################
 '''
-You can slice a string exactly like a list! 
-In fact, you can think of strings as lists of characters: 
+You can slice a string exactly like a list!
+In fact, you can think of strings as lists of characters:
 each character is a sequential item in the list, starting from index 0.
 '''
 animals = "catdogfrog"

@@ -1,7 +1,7 @@
 
 ################################################################################
 ### Dictionaries
-# A dictionary is similar to a list, but you access values by looking up a key instead of an index. 
+# A dictionary is similar to a list, but you access values by looking up a key instead of an index.
 # A key can be any string or number. Dictionaries are enclosed in curly braces.
 
 d = {'key1' : 1, 'key2' : 2, 'key3' : 3}
@@ -20,7 +20,7 @@ menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
 menu["kampot"] = 4.5
 
 
-# The length len() of a dictionary is the number of key-value pairs it has. 
+# The length len() of a dictionary is the number of key-value pairs it has.
 # Each pair counts only once, even if the value is a list.
 # (That's right: you can put lists inside dictionaries!)
 print len(menu)
@@ -41,7 +41,7 @@ del zoo_animals['Bengal Tiger']
 
 ################################################################################
 webster = {
-		"Aardvark" : "A star of a popular children's cartoon show.",
+    "Aardvark" : "A star of a popular children's cartoon show.",
     "Baa" : "The sound a goat makes.",
     "Carpet": "Goes on the floor.",
     "Dab": "A small amount."

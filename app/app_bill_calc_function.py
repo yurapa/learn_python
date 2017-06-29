@@ -16,7 +16,7 @@ def tip(bill):
     bill *= 1.15
     print "With tip: %f" % bill
     return bill
-    
+
 meal_cost = 100
 meal_with_tax = tax(meal_cost)
 meal_with_tip = tip(meal_with_tax)

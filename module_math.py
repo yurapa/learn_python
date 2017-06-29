@@ -12,11 +12,11 @@
     math.pi та math.e
 функції округлення чисел:
     math.ceil(x) (округлення "вверх"), math.floor(x) (округлення "вниз")
-степеневі та логарифмічні функції: 
+степеневі та логарифмічні функції:
     math.pow(x, y), math.exp(x), math.log(x), math.log(x, y), math.log10(x), math.sqrt(x)
-тригонометричні функції: 
+тригонометричні функції:
     math.sin(x), math.cos(x), math.tan(x), math.asin(x), math.acos(x)
-функції для переведення градусів та радіан: 
+функції для переведення градусів та радіан:
     math.degrees(x) та math.radians(x)
 '''
 
