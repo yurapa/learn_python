@@ -3,8 +3,36 @@ from config import parse_config_file
 
 
 class PostgreSQLCRUD():
-    """ CRUD
+    """ CRUD, work with DB
     """
+
+    def __init__(self):
+        pass
+
+
+
+    def db_insert(self, table, fields, values):
+        """Build insert query with user parameters
+        Args:
+            table (str): table name
+            fields (list or tuple): names of fields to insert values into
+            values (list or tuple): values for inserting
+        Returns:
+            True: if operation was successful
+            None: if operation wasn't successful
+        """
+        pass
+
+    def db_update(self, table, set_data, filter_data):
+        pass
+
+    def db_select(self, table, fields):
+        pass
+
+    def db_delete(self, table, filter_field, filter_val):
+        pass
+
+
 
     def db_connect(**kwargs):
         """Connect to DB, using parsed data
@@ -24,6 +52,7 @@ class PostgreSQLCRUD():
             print "Opened database successfully"
         except:
             print "I am unable to connect to the database"
+        return True
 
 
     def db_create():

@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 # The above encoding declaration is required and the file must be saved as UTF-8
 
+import sys
+print sys.version
+
 
 ################################################################################
 # Будь який файл (.py) - це вже модуль.
