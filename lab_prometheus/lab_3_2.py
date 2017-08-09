@@ -27,18 +27,31 @@
 # Результат: 55
 
 import sys
+a = 0
+b = 1
+n = int(sys.argv[1])
+i = 0
 
-endOfLoop = int(sys.argv[1])
-n = 0
-result = 0
-collection = [0, 1]
-
-if endOfLoop < 0:
-    print "Введіть будь ласка ціле додатнє число!"
-    sys.exit()
-
-for n in range(collection):
-    result = result + (n-1)
-    print result
+for i in range(n):
+    a, b = b, a + b
+print a
 
 
+# Another example
+"""
+import sys
+x = int(sys.argv[1])
+fib_prev = 0
+fib_curr = 1
+if x == 0:
+    print fib_prev
+else:
+    if x == 1:
+        print fib_curr
+    else:
+        for i in range(x-1):
+            fib_new = fib_prev + fib_curr
+            fib_prev = fib_curr
+            fib_curr = fib_new
+        print fib_curr
+"""
