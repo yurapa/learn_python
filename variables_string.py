@@ -2,27 +2,21 @@
 # -*- coding: utf-8 -*-
 # The above encoding declaration is required and the file must be saved as UTF-8
 
+################################################################################
+""" STRING (рядки)
+    Example : 'High hopes', "The great gig in the sky", "When You're In" і т.д.
+    Виглядають як текстові фрагменти будь-якої довжини - від пустого рядка і до
+    нескінченності (при цьому, зверніть увагу, що консоль/термінал, у якій ми
+    вводимо рядок може мати власне обмеження довжини команди і просто не дозволить
+    ввести надто великий рядок за 1 раз) - взяті в одинарні чи подвійні лапки.
 """
-Str -- рядки: 'High hopes', "The great gig in the sky", "When You're In" і т.д.
-Виглядають як текстові фрагменти будь-якої довжини - від пустого рядка і до
-нескінченності (при цьому, зверніть увагу, що консоль/термінал, у якій ми
-вводимо рядок може мати власне обмеження довжини команди і просто не дозволить
-ввести надто великий рядок за 1 раз) - взяті в одинарні чи подвійні лапки.
-Для перетворення будь-якого значення у рядок використовується функція str():
-"""
-x_int = 1
-x_str = str(x_int)
-
 
 ################################################################################
 # String Concatenation - конкатенація - додавання/склеювання рідків між собою.
 # Не бажано її використовувати через засмічення памяті (не ефективного викорстання)!
+
 print 'q' + 'w' # 'qw'
 print "Life " + "of " + "Brian" # Life of Brian
-
-
-################################################################################
-# Explicit String Conversion
 print "I have " + str(2) + " coconuts!"
 
 
@@ -46,17 +40,16 @@ n = "Ryan"[3] # n
 
 
 ################################################################################
-# String methods
-# len() - gets the length (the number of characters) of a string
-# lower()
-# upper()
-# str()
+""" STRING METHODS:
+    len(x) - returns the length of the string (the number of characters)
+    x.upper() - змінює регістр всіх символів рядка x на верхній
+    x.lower() - змінює регістр всіх символів рядка x на нижній
+    str(x) - Для перетворення будь-якого значення у рядок
+"""
 
-parrot = "Norwegian Blue"
-
-print len(parrot) # 14
-print parrot.lower() # norwegian blue
-print parrot.upper() # NORWEGIAN BLUE
+print len("Norwegian Blue") # 14
+print 'String'.upper() # 'STRING'
+print 'String'.lower() # 'string'
 
 pi = 3.14
 print str(pi) # "3.14"
@@ -110,10 +103,6 @@ s = "Go Gators! Come on Gators!"
   a = ['abc','def','ghi']
   t = "--"
   x = t.join(a) #x = abc--def--ghi
-# int len(string): returns the length of the string
-  x = len(s) #x = 26
-# string lower(): returns a version of a string with all lower case lettters.
-  print s.lower() #go gators! come on gators!
 # string replace(old, new [,count]): returns a copy of the string with all occurances of old replaced by new. If the optional count argument is given, only the first count occurances are replaced.
   x = s.replace("Gators","Tigers",1) #x = Go Tigers! Come on Gators!
 # int rfind(sub [,start[,end]]): same as find but returns the numeric position of the last occurance of sub in the string.

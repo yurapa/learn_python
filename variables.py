@@ -4,6 +4,7 @@
 print type(42) # <type 'int'>
 print type(4.2) # <type 'float'>
 print type('spam') # <type 'str'>
+print type(('spam',)) # <type 'tuple'>
 
 ar1 = {} # <type 'dict'>
 ar2 = [] # <type 'list'>

@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# The above encoding declaration is required and the file must be saved as UTF-8
 
 ################################################################################
 ### LISTS
@@ -15,30 +18,29 @@ print zoo_animals[2] # Access by Index
 
 
 ################################################################################
-# Append
-# append() takes exactly one argument!
-
-letters = ['a', 'b', 'c']
-letters.append('d')
-print len(letters)
-print letters
-
-
-################################################################################
-# List Slicing
+# List Slicing (ЗРІЗИ)
 # "Slicing" did not modify the original list!
+
+# example_list[i:j] - вибере всі елементи списку з i-го (включно) по j-й (виключаючи),
+# example_list[i:] - вибере всі елементи списку з i-го (включно) до кінця,
+# example_list[:j] - вибере всі елементи списку з початку по j-й (виключаючи).
+
+# Також операцію зрізу можна застосовувати і з 3 аргументами:
+# example_list[i:j:k] -- вибере кожний k-й елемент списку з i-го (включно) по j-й (виключаючи),
+# example_list[i::k] -- вибере кожний k-й елемент списку з i-го (включно) до кінця,
+# example_list[:j:k] -- вибере кожний k-й елемент списку з початку по j-й (виключно),
+# example_list[::k] -- вибере кожний k-й елемент списку.
 
 letters = ['a', 'b', 'c', 'd', 'e']
 slice = letters[1:3]
 print slice # ['b', 'c']
+print letters[::-1] # ['e', d', 'c', 'b', 'a'] -> revert a list!
 print letters # ['a', 'b', 'c', 'd', 'e']
 
 
-################################################################################
-'''
-You can slice a string exactly like a list!
-In fact, you can think of strings as lists of characters:
-each character is a sequential item in the list, starting from index 0.
+''' You can slice a string exactly like a list!
+    In fact, you can think of strings as lists of characters:
+    each character is a sequential item in the list, starting from index 0.
 '''
 animals = "catdogfrog"
 cat  = animals[:3]   # The first three characters of animals
@@ -47,10 +49,23 @@ frog = animals[6:] # From the seventh character to the end
 
 
 ################################################################################
-# search for an item in a list
+""" Append
+    x.append(y) - додає значення y в кінець списку x
+    append() takes exactly one argument!
+"""
+letters = ['a', 'b', 'c']
+letters.append('d')
+print len(letters) # 4
+print letters # ['a', 'b', 'c', 'd']
 
-animals = ["ant", "bat", "cat"]
-print animals.index("bat")
+
+################################################################################
+""" Reverse
+    x.reverse() - змінює порядок елементів списку x на зворотний
+"""
+x = [1, 2, 3]
+x.reverse()
+print x # [3, 2, 1]
 
 
 ################################################################################
@@ -76,11 +91,32 @@ print beatles # ["john","paul","george","ringo"]
 print "\nSorting animals:"
 animals = ["cat", "ant", "bat"]
 animals.sort() # Note that .sort() modifies the list rather than returning a new list.
-print animals
+print animals # ['ant', 'bat', 'cat']
 
 
 ################################################################################
-### FOR .. IN ..     with List.
+# search for an item in a list
+animals = ["ant", "bat", "cat"]
+print animals.index("bat") # 1
+
+
+################################################################################
+### Iterating over a list
+
+# Method 1
+# Useful to loop through the list, but it's not possible to modify the list this way.
+for item in list:
+    print item
+
+
+# Method 2 - iterate through indexes:
+# Uses indexes to loop through the list, making it possible to also modify the list if needed.
+for i in range(len(list)):
+    print list[i]
+
+
+################################################################################
+# FOR .. IN ..     with List.
 # If you want to do something with every item in the list, you can use a for loop.
 # Example: for item in list_name:
 
@@ -97,8 +133,9 @@ for number in my_list:
 # 14
 
 
-# a for-loop that iterates over start_list and .append()s each number squared (x ** 2) to square_list.
-# Then sort square_list
+################################################################################
+# a for-loop that iterates over start_list and .append()s each number
+# squared (x ** 2) to square_list. Then sort square_list
 print "\nSorted square of each item original list: "
 start_list = [5, 3, 1, 2, 4]
 square_list = []

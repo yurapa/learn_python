@@ -39,6 +39,13 @@ zoo_animals = {
 del zoo_animals['Bengal Tiger']
 
 
+menus = {
+    Breakfast Menu: ['Spam n Eggs', 'Spam n Jam', 'Spam n Ham'],
+    Lunch Menu: ['SLT (Spam-Lettuce-Tomato)', 'PB&S (PB&Spam)'],
+    Dinner Menu: ['Spalad', 'Spamghetti', 'Spam noodle soup']
+}
+
+
 ################################################################################
 webster = {
     "Aardvark" : "A star of a popular children's cartoon show.",
